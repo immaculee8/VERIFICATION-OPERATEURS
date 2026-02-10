@@ -50,6 +50,12 @@ import java.io.IOException;
                 // Découpe la ligne en utilisant le point-virgule comme séparateur
                 // parts[0] = id, parts[1] = nom, parts[2] = poste
                 String[] parts = line.split(";");
+
+                // Vérifie deux conditions :
+                // 1. parts.length >= 1 : la ligne contient au moins un élément (l'ID)
+                // 2. parts[0].trim().equals(operatorId) : compare l'ID nettoyé des espaces avec l'ID recherché
+                // trim() : enlève les espaces avant et après la chaîne
+                // equals() : compare le contenu des chaînes (pas la référence)
                 if (parts.length >= 1 && parts[0].trim().equals(operatorId)) {
                     return true;
                 }
