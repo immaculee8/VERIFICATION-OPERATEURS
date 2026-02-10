@@ -14,7 +14,7 @@ import java.io.IOException;
 
 public class OperatorChecker {
     private static final String FILE = "data/operators.txt";
-
+//verifie si un operateur existe dans le fichier operateur
     public static boolean operatorExists(String operatorId) {
         try (BufferedReader br = new BufferedReader(new FileReader(FILE))) {
             String line;
