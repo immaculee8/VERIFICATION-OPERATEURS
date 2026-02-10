@@ -16,6 +16,11 @@ import java.io.IOException;
 
 // Déclaration de la classe OperatorChecker (non publique donc accessible uniquement dans son package)
  class OperatorChecker {
+
+    // Déclaration d'une constante qui contient le chemin relatif du fichier de données
+    // private : accessible uniquement dans cette classe
+    // static : appartient à la classe elle-même, pas aux instances
+    // final : valeur constante qui ne peut pas être modifiée
     private static final String FILE = "data/operators.txt";
 
     public static boolean operatorExists(String operatorId) {
