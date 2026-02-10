@@ -30,6 +30,7 @@ import java.io.IOException;
             System.out.println("Erreur lecture opérateurs : " + e.getMessage());
         }
         return false;
+       //methodeprincipale pour tester le programme
     }
     public static void main(String[] args) {
         System.out.println("Opérateur 1 existe ? " + operatorExists("1"));
