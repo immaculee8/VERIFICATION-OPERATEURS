@@ -35,6 +35,8 @@ import java.io.IOException;
         // BufferedReader : permet une lecture efficace ligne par ligne
         // FileReader : lit le fichier texte
         try (BufferedReader br = new BufferedReader(new FileReader(FILE))) {
+            
+            // Déclaration d'une variable pour stocker chaque ligne lue du fichier
             String line;
             while ((line = br.readLine()) != null) {
                //chaque ligne est au format id;nom;poste
