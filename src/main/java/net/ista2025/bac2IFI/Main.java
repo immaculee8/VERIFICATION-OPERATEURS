@@ -38,6 +38,10 @@ import java.io.IOException;
             
             // Déclaration d'une variable pour stocker chaque ligne lue du fichier
             String line;
+
+            // Boucle de lecture : lit chaque ligne jusqu'à la fin du fichier (null)
+            // br.readLine() : lit une ligne du fichier
+            // != null : condition pour continuer tant qu'il y a des lignes à lire
             while ((line = br.readLine()) != null) {
                //chaque ligne est au format id;nom;poste
                
