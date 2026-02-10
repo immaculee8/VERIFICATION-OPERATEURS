@@ -14,6 +14,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
+// Déclaration de la classe OperatorChecker (non publique donc accessible uniquement dans son package)
  class OperatorChecker {
     private static final String FILE = "data/operators.txt";
 
