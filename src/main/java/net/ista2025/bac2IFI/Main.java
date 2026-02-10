@@ -19,6 +19,8 @@ import java.io.IOException;
         try (BufferedReader br = new BufferedReader(new FileReader(FILE))) {
             String line;
             while ((line = br.readLine()) != null) {
+               //chaque ligne est au format id;nom;poste
+               
                 String[] parts = line.split(";");
                 if (parts.length >= 1 && parts[0].trim().equals(operatorId)) {
                     return true;
