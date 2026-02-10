@@ -43,8 +43,12 @@ import java.io.IOException;
             // br.readLine() : lit une ligne du fichier
             // != null : condition pour continuer tant qu'il y a des lignes à lire
             while ((line = br.readLine()) != null) {
-               //chaque ligne est au format id;nom;poste
+                
+                // Commentaire expliquant le format des données dans le fichier
+                // Chaque ligne est au format : id;nom;poste
                
+                // Découpe la ligne en utilisant le point-virgule comme séparateur
+                // parts[0] = id, parts[1] = nom, parts[2] = poste
                 String[] parts = line.split(";");
                 if (parts.length >= 1 && parts[0].trim().equals(operatorId)) {
                     return true;
