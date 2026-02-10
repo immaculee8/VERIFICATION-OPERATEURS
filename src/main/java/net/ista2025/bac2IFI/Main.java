@@ -23,6 +23,12 @@ import java.io.IOException;
     // final : valeur constante qui ne peut pas être modifiée
     private static final String FILE = "data/operators.txt";
 
+    // Méthode publique et statique qui vérifie si un opérateur existe dans le fichier
+    // public : accessible depuis d'autres classes
+    // static : méthode de classe, peut être appelée sans créer d'instance
+    // boolean : type de retour (vrai ou faux)
+    // operatorExists : nom de la méthode
+    // String operatorId : paramètre d'entrée représentant l'ID de l'opérateur à rechercher
     public static boolean operatorExists(String operatorId) {
         try (BufferedReader br = new BufferedReader(new FileReader(FILE))) {
             String line;
