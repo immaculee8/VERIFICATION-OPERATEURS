@@ -12,7 +12,7 @@ import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
 
-public class OperatorChecker {
+ class OperatorChecker {
     private static final String FILE = "data/operators.txt";
 
     public static boolean operatorExists(String operatorId) {
