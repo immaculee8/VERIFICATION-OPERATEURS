@@ -30,6 +30,10 @@ import java.io.IOException;
     // operatorExists : nom de la méthode
     // String operatorId : paramètre d'entrée représentant l'ID de l'opérateur à rechercher
     public static boolean operatorExists(String operatorId) {
+        
+        // Bloc try-with-resources (Java 7+) garantissant la fermeture automatique du BufferedReader
+        // BufferedReader : permet une lecture efficace ligne par ligne
+        // FileReader : lit le fichier texte
         try (BufferedReader br = new BufferedReader(new FileReader(FILE))) {
             String line;
             while ((line = br.readLine()) != null) {
